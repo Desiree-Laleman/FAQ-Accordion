@@ -1,0 +1,121 @@
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+body,
+h1,
+ul,
+p {
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+  background-color: white;
+  border-radius: 30px;
+  width: 90%;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+#faq-container {
+  padding: 30px;
+}
+
+#faq-container ul {
+  color: hsl(237, 12%, 33%);
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+#faq-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+#image-container {
+  position: relative;
+  height: 150px;
+}
+
+#image-container img {
+  position: absolute;
+  width: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#woman {
+  top: -135px;
+}
+
+#desktop-shadow,
+#desktop-woman,
+#illustration-box {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    display: flex;
+    width: 75%;
+  }
+
+  #image-container,
+  #faq-container {
+    flex: 1;
+  }
+
+  #image-container {
+    min-width: 330px;
+  }
+
+  #shadow,
+  #woman {
+    display: none;
+  }
+
+  #desktop-shadow,
+  #desktop-woman,
+  #illustration-box {
+    display: initial;
+  }
+
+  #image-container #desktop-woman {
+    top: 50%;
+    left: 125px;
+    width: 400px;
+  }
+
+  #image-container #illustration-box {
+    top: 135%;
+    left: 0px;
+    width: 130px;
+  }
+
+  #image-container #desktop-shadow {
+    top: -50%;
+    left: 0px;
+    width: 600px;
+    height: 600px;
+  }
+
+  h1 {
+    text-align: left;
+    margin: 40px 0 20px 0;
+  }
+}
